@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LessNoise - Mental Clarity App</title>
+    <meta name="description" content="Let it go — literally. Mental clarity companion with offline privacy and unique Release Ritual.">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.6;
+            color: #1C1C1E;
+            background: linear-gradient(135deg, #F5F5F5 0%, #E8E8E8 100%);
+        }
+        
+        .hero {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 40px 20px;
+            text-align: center;
+        }
+        
+        .hero-content {
+            max-width: 800px;
+        }
+        
+        .logo {
+            font-size: 120px;
+            margin-bottom: 20px;
+            animation: float 3s ease-in-out infinite;
+        }
+        
+        @keyframes float {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(-20px); }
+        }
+        
+        h1 {
+            font-size: 64px;
+            font-weight: 700;
+            margin-bottom: 20px;
+            background: linear-gradient(135deg, #007AFF 0%, #FF9500 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        
+        .tagline {
+            font-size: 28px;
+            color: #3A3A3C;
+            margin-bottom: 40px;
+            font-weight: 500;
+        }
+        
+        .description {
+            font-size: 18px;
+            color: #636366;
+            margin-bottom: 40px;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        .cta-buttons {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-bottom: 40px;
+        }
+        
+        .btn {
+            display: inline-block;
+            padding: 16px 40px;
+            font-size: 18px;
+            font-weight: 600;
+            text-decoration: none;
+            border-radius: 12px;
+            transition: all 0.3s;
+        }
+        
+        .btn-primary {
+            background: #007AFF;
+            color: white;
+            box-shadow: 0 4px 20px rgba(0, 122, 255, 0.3);
+        }
+        
+        .btn-primary:hover {
+            background: #0056B3;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 25px rgba(0, 122, 255, 0.4);
+        }
+        
+        .btn-secondary {
+            background: white;
+            color: #007AFF;
+            border: 2px solid #007AFF;
+        }
+        
+        .btn-secondary:hover {
+            background: #007AFF;
+            color: white;
+            transform: translateY(-2px);
+        }
+        
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            margin-top: 60px;
+        }
+        
+        .feature {
+            background: white;
+            padding: 30px;
+            border-radius: 16px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+        }
+        
+        .feature:hover {
+            transform: translateY(-5px);
+        }
+        
+        .feature-icon {
+            font-size: 48px;
+            margin-bottom: 15px;
+        }
+        
+        .feature-title {
+            font-size: 20px;
+            font-weight: 600;
+            color: #1C1C1E;
+            margin-bottom: 10px;
+        }
+        
+        .feature-text {
+            font-size: 16px;
+            color: #636366;
+        }
+        
+        .footer {
+            background: white;
+            padding: 40px 20px;
+            text-align: center;
+            margin-top: 80px;
+            border-top: 1px solid #E5E5EA;
+        }
+        
+        .footer-links {
+            display: flex;
+            gap: 30px;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-bottom: 20px;
+        }
+        
+        .footer-links a {
+            color: #007AFF;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        
+        .footer-links a:hover {
+            text-decoration: underline;
+        }
+        
+        .copyright {
+            color: #8E8E93;
+            font-size: 14px;
+        }
+        
+        @media (max-width: 768px) {
+            .logo {
+                font-size: 80px;
+            }
+            
+            h1 {
+                font-size: 40px;
+            }
+            
+            .tagline {
+                font-size: 20px;
+            }
+            
+            .description {
+                font-size: 16px;
+            }
+            
+            .cta-buttons {
+                flex-direction: column;
+            }
+            
+            .btn {
+                width: 100%;
+                max-width: 300px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="hero">
+        <div class="hero-content">
+            <div class="logo">🧠</div>
+            <h1>LessNoise</h1>
+            <p class="tagline">Let it go — literally</p>
+            <p class="description">
+                Mental clarity companion that helps you capture thoughts, organize your mind, 
+                and release what weighs you down. Offline-first. Privacy-first. Forever yours.
+            </p>
+            
+            <div class="cta-buttons">
+                <a href="#" class="btn btn-primary">Download on App Store</a>
+                <a href="lessnoise-support.html" class="btn btn-secondary">Learn More</a>
+            </div>
+            
+            <div class="features">
+                <div class="feature">
+                    <div class="feature-icon">🔥</div>
+                    <div class="feature-title">Release Ritual</div>
+                    <div class="feature-text">
+                        Unique fire animation lets you literally burn away worries. 
+                        Watch them turn to ash. Feel the release.
+                    </div>
+                </div>
+                
+                <div class="feature">
+                    <div class="feature-icon">✨</div>
+                    <div class="feature-title">Daily Clear-Down</div>
+                    <div class="feature-text">
+                        Start focused with Morning Reset. End peaceful with Evening Unload. 
+                        Build calm habits without pressure.
+                    </div>
+                </div>
+                
+                <div class="feature">
+                    <div class="feature-icon">✈️</div>
+                    <div class="feature-title">Travel Mode</div>
+                    <div class="feature-text">
+                        Gate timers, packing lists, breathing exercises. 
+                        Designed for airports and travel stress.
+                    </div>
+                </div>
+                
+                <div class="feature">
+                    <div class="feature-icon">🔒</div>
+                    <div class="feature-title">Privacy First</div>
+                    <div class="feature-text">
+                        Everything stays on your device. No cloud sync, no tracking, 
+                        no analytics. Even works in airplane mode.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="footer">
+        <div class="footer-links">
+            <a href="lessnoise-privacy.html">Privacy Policy</a>
+            <a href="lessnoise-terms.html">Terms of Service</a>
+            <a href="lessnoise-support.html">Support</a>
+            <a href="mailto:hello@lessnoise.app">Contact</a>
+        </div>
+        <p class="copyright">© 2025 LessNoise. All rights reserved.</p>
+        <p class="copyright" style="margin-top: 10px;">
+            <strong>Lifetime Access - $14.99</strong> • No Subscription • Try Free for 7 Days
+        </p>
+    </div>
+</body>
+</html>
